@@ -18,6 +18,13 @@ resource "aws_instance" "tf-pub-ec2" {
   tags = {
     Name = "tf-${var.env_prefix}-pup-ec2"
   }
+
+  #user_data = file("filedestination") -> locate file.sh script
+  #write script directrly here 
+#   user_data = <<E0F
+#                     #!/bin/bash
+                    
+#                 E0F
 }
 
 resource "aws_instance" "tf-prv-ec2" {
