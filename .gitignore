@@ -1,4 +1,5 @@
-.terraform/*
-
+.terraform*
 *.tfstate
 *.tfstate.*
+ec2-key-pair*
+.terraform.lock.hcl
