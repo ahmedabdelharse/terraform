@@ -1,7 +1,6 @@
-.terraform/*
-*terraform.lock.*
+.terraform*
 *.tfstate
 *.tfstate.*
 ec2-key-pair*
-
+.terraform.lock.hcl
 #terraform.tfvars
