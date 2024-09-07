@@ -28,7 +28,7 @@ resource "aws_default_route_table" "tf_lab1_routetable" {
   default_route_table_id = aws_vpc.tf_lab1_vpc.default_route_table_id
   route {
     cidr_block = "0.0.0.0/0"
-    gateway_id             = aws_internet_gateway.tf_lab1_igw.id  
+    gateway_id = aws_internet_gateway.tf_lab1_igw.id
   }
   tags = {
     Name = "tf-${var.env_prefix}-lab1-routetable"
